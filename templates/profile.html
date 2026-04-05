@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <div class="profile-container">
+
+        <!-- HEADER -->
+        <div class="profile-header">
+
+            <!-- ✅ PROFILE IMAGE (UPDATED) -->
+
+            <form action="/upload_profile_pic" method="POST" enctype="multipart/form-data">
+                <label for="fileInput">
+                    {% if user['profile_pic'] %}
+                    <img src="{{ url_for('static', filename='uploads/' + user['profile_pic']) }}" class="profile-pic">
+                    {% else %}
+                    <img src="{{ url_for('static', filename='images/user.png') }}" class="profile-pic">
+                    {% endif %}
+                </label>
+                <input type="file" id="fileInput" name="profile_pic" style="display:none;"
+                    onchange="this.form.submit()">
+            </form>
+
+            <!-- ✅ NAME -->
+            <h2>{{ session['user_name'] }}</h2>
+
+            <p>Lost & Found Member</p>
+
+            <!-- ✅ NEW USER INFO -->
+            <p><b>Course:</b> {{ user.course if user.course else "Not added" }}</p>
+            <p><b>Year:</b> {{ user.year if user.year else "Not added" }}</p>
+            <p><b>Reg No:</b> {{ user.reg_no if user.reg_no else "Not added" }}</p>
+
+            <!-- ✅ EDIT PROFILE BUTTON -->
+            <div class="edit-profile-anchor">
+                <a href="/edit_profile" class="edit-profile-btn">Edit Profile</a>
+            </div>
+
+
+        </div>
+
+        <!-- VOUCHERS (UNCHANGED ✅) -->
+        <div class="voucher-section">
+
+            <a href="/reward" class="btn">My Rewards</a>
+        </div>
+
+        <!-- ACTION BUTTONS (UNCHANGED ✅) -->
+        <div class="profile-actions">
+            <a href="/my_items" class="btn">My Items</a>
+            <a href="/post_lost" class="btn">Post Lost</a>
+            <a href="/post_found" class="btn">Post Found</a>
+
+        </div>
+        <div class="profile-logout">
+            <a href="/logout" class="logout-btn">Logout</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

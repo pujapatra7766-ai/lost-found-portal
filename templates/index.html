@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Lost & Found Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">LostLink</div>
+
+        <nav>
+            <a href="/" class="hide-mobile">Home</a>
+            <a href="/register">Register</a>
+            <a href="/post_lost">Report Lost</a>
+            <a href="/post_found">Report Found</a>
+
+            <div class="profile-menu">
+                {% if session.get('profile_pic') %}
+                <img src="{{ url_for('static', filename='uploads/' + session['profile_pic']) }}" class="nav-profile"
+                    onclick="toggleMenu()">
+                {% else %}
+                <img src="{{ url_for('static', filename='images/user.png') }}" class="nav-profile"
+                    onclick="toggleMenu()">
+                {% endif %}
+                <div class="dropdown-menu" id="profileDropdown">
+                    <a href="/profile">Profile Information</a>
+                </div>
+            </div>
+
+
+        </nav>
+    </header>
+
+
+    <section class="index-hero">
+
+        <form action="/search" method="GET">
+            <input type="text" name="query" placeholder="Search here">
+            <button type="submit">Search</button>
+        </form>
+        <h1>Lost & Found Portal with Rewards</h1>
+        <p>Report & Recover! Earn Points by Helping Others.</p>
+        <div class="hero-buttons">
+            <a href="/post_lost" class="index-gero-btn yellow">Report Lost Item</a>
+            <a href="/post_found" class="index-gero-btn blue">Report Found Item</a>
+        </div>
+
+    </section>
+
+
+    <section class="icons">
+
+        <div class="icon-card">📱</div>
+        <div class="icon-card">📦</div>
+        <div class="icon-card">🔑</div>
+        <div class="icon-card">👜</div>
+
+    </section>
+
+    <script src="/static/js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Claim Item</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="claim-container">
+
+        <h2>Claim Lost Item</h2>
+
+        <!-- SUCCESS MESSAGE -->
+        {% if success %}
+        <div class="success-msg">
+            ✅ Claim Sent Successfully!
+        </div>
+        {% endif %}
+
+        <!-- IMAGE -->
+        <img src="{{ url_for('static', filename='uploads/' + item.image) }}" class="claim-img">
+
+        <!-- ITEM DETAILS -->
+        <h3>{{ item.item_name }}</h3>
+        <p class="claim-user">Reported by {{ item.name }}</p>
+
+        <!-- FORM -->
+        <form method="POST">
+
+            <textarea name="message" placeholder="Write your claim message..." required></textarea>
+
+            <button type="submit" class="claim-btn">Send Claim Request</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

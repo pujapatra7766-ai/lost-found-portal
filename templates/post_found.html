@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Post Found Item</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="form-container">
+        <div class="form-box">
+            <h2>Post Found Item</h2>
+
+            <form method="POST" enctype="multipart/form-data">
+                <input type="text" name="item_name" placeholder="Item Name" required>
+                <textarea name="description" placeholder="Description" required></textarea>
+                <input type="text" name="location" placeholder="Location" required>
+                <input type="file" name="image" placeholder="Upload" required>
+                <button type="submit"  class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

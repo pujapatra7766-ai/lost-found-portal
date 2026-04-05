@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Settings</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="admin-settings-navbar">
+        <h2>Admin Settings</h2>
+        
+    </div>
+
+    <div class="admin-settings-container">
+
+        <div class="admin-settings-card">
+            <h3>🎁 Reward Settings</h3>
+
+            <form method="POST">
+                <label>Voucher Name:</label><br>
+                <input type="text" name="voucher_name" value="{{ data[0] }}"><br><br>
+
+                <label>Voucher Value:</label><br>
+                <input type="number" name="voucher_value" value="{{ data[1] }}"><br><br>
+
+                <button type="submit" class="admin-settings-btn">Save Settings</button>
+            </form>
+            <a href="/admin" class="admin-settings-an">Back</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-box">
+            <h2>Edit Profile</h2>
+            <form method="POST" enctype="multipart/form-data">
+                <label class="label-input">Course</label>
+                <input type="text" name="course" value="{{ user[0] }}" placeholder="Course">
+                <label class="label-input">Year</label>
+                <input type="text" name="year" value="{{ user[1] }}" placeholder="Year">
+                <label class="label-input">Registration No</label>
+                <input type="text" name="reg_no" value="{{ user[2] }}" placeholder="Reg No">
+                <button type="submit" class="edit-profile-submit">Save</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
