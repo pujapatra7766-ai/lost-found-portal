@@ -72,6 +72,11 @@ CREATE TABLE settings (
 )
 """)
 
+cur.execute("""
+INSERT INTO users (name, email, password, role)
+VALUES ('Admin', 'admin@gmail.com', 'admin123', 'admin')
+""")
+
 # default setting
 cur.execute("INSERT INTO settings VALUES (1, 'Amazon Gift Card', 100)")
 
