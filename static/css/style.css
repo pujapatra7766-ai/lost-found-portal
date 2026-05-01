@@ -1117,7 +1117,7 @@ body {
 }
 @media (min-width: 1025px) {
     .index-hero {
-        height: 34vh;
+        height: 38vh;
     }
     .index-hero h1 {
         font-size: 48px;
