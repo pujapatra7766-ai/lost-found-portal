@@ -11,9 +11,7 @@ body {
 
 
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
+    position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,14 +40,14 @@ nav a {
 
 .index-hero {
     text-align: center;
-    padding-top: 123px;
+    padding-top: 66px;
     background: linear-gradient(#3a7bd5, #1f4e79);
     color: white;
     height: 42vh;
 }
 
 .index-hero h1 {
-    padding-top: 10px;
+    padding-top: 55px;
     font-size: 45px;
 }
 
@@ -1495,7 +1493,7 @@ body {
 /* 🖥️ Large Screens (1025px and above) */
 @media (min-width: 1025px) {
     .index-hero {
-        height: 34vh;
+        height: 50vh;
     }
     .index-hero h1 {
         font-size: 48px;
