@@ -7,45 +7,25 @@
 </head>
 
 <body>
-
-
     <div class="top-header">
         <h2>My Reported Items</h2>
     </div>
-
-
     <div class="items-container">
 
         {% for item in items %}
         <div class="item-card">
-
-            <!-- IMAGE -->
-            <!-- {% if item[5] %}
-            <img src="{{ url_for('static', filename='uploads/' + item[5]) }}">
-            {% else %}
-            <img src="{{ url_for('static', filename='images/user.png') }}">
-            {% endif %} -->
-
-
             {% if item.image %}
             <img src="{{ url_for('static', filename='uploads/' + item.image) }}">
             {% else %}
             <img src="{{ url_for('static', filename='images/user.png') }}">
             {% endif %}
-
             <!-- DETAILS -->
             <h3>{{ item.item_name }}</h3>
-
             <p><b>Description:</b> {{ item.description }}</p>
             <p style="padding-bottom: 30px;"><b>Location:</b> {{ item.location }}</p>
-
             <a href="/" class="back-btn">Home</a>
-
         </div>
         {% endfor %}
-
     </div>
-
 </body>
-
-</html>>
+</html>

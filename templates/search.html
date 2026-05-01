@@ -1,66 +1,38 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Search Items</title>
-
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
-
 <body>
     <div class="search-container">
-
         <h2>Search Lost & Found Items</h2>
-
         <input type="text" placeholder="Search items..." class="search-box">
-
-        <!-- LOST ITEMS -->
         <h3>Lost Items</h3>
-
         {% for item in lost %}
         <div class="search-card">
-
             <img src="{{ url_for('static', filename='uploads/' + item.image) }}">
-
             <div class="card-info">
-
-
                 <h4>{{ item.item_name }}</h4>
                 <p>{{ item.description }}</p>
                 <p><b>Location:</b> {{ item.location }}</p>
-
                 <a href="/claim/{{ item.id }}" class="btn-claim">Claim</a>
             </div>
-
         </div>
         {% endfor %}
-
-        <!-- FOUND ITEMS -->
         <h3>Found Items</h3>
-
         {% for item in found %}
         <div class="search-card">
-
             <img src="{{ url_for('static', filename='uploads/' + item.image) }}">
-
             <div class="card-info">
-
                 <h4>{{ item.item_name }}</h4>
                 <p>{{ item.description }}</p>
                 <p><b>Location:</b> {{ item.location }}</p>
-
                 <span class="found-label">Found Item</span>
             </div>
-
         </div>
         {% endfor %}
-
     </div>
-
-
-
-
     <script src="/static/js/script.js"></script>
 </body>
-
 </html>

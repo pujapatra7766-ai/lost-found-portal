@@ -4,7 +4,6 @@
 
 <head>
     <title>Admin Dashboard</title>
-    <!-- <link rel="stylesheet" href="/static/css/admin.css"> -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
@@ -27,10 +26,7 @@
             <h3>Pending Claims</h3>
             {% for claim in claims %}
             <div class="admin-claim-box">
-
-                <!-- <p><b>Message:</b> {{ claim[4] }}</p> -->
                 <p><b>Message:</b> {{ claim.message }}</p>
-
                 <div class="admin-actions">
                     <a href="/approve/{{ claim.id }}" class="admin-approve">Approve</a>
                     <a href="/reject/{{ claim.id }}" class="admin-reject">Reject</a>
@@ -51,9 +47,6 @@
             <h3>Reward Settings</h3>
             <a href="/settings" class="admin-btn">Integrations</a>
         </div>
-
     </div>
-
 </body>
-
 </html>

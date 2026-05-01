@@ -1,45 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rewards & Leaderboard</title>
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
-
 <body>
-
     <div class="reward-container">
-
         <h1 class="title">User Profile & Rewards</h1>
-
-        <div class="reward-card">
-
-            <!-- HEADER -->
+        <div class="reward-card">>
             <div class="header">
                 <h2>My Profile & Rewards</h2>
                 <a href="#" class="leaderboard-link">Leaderboard ▼</a>
             </div>
-
-            <!-- USER INFO -->
             <div class="user-box">
                 <div class="user-left">
                     <h3>Welcome, {{ session['user_name'] }}!</h3>
-
                     <p>🎁 Vouchers Earned: <b>{{ total_vouchers }}</b></p>
                     <p>📦 Items Returned: <b>{{ items_returned }}</b></p>
                 </div>
-
                 <div class="trophy">
                     🏆
                 </div>
             </div>
-
-            <!-- LEADERBOARD -->
             <div class="leaderboard">
                 <h3>Leaderboard</h3>
-
                 {% for user in leaderboard %}
                 <div class="leader-item">
                     <span class="rank">{{ loop.index }}.</span>
@@ -47,13 +33,9 @@
                     <span class="points">{{ user[1] }} vouchers</span>
                 </div>
                 {% endfor %}
-
             </div>
-
         </div>
-
     </div>
     <script src="/static/js/script.js"></script>
 </body>
-
 </html>
