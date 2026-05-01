@@ -107,7 +107,7 @@ nav a {
 }
 .form-box {
     width: 100%;
-    background: white;
+    background: rgba(0, 0, 0, 0.15);
     padding: 40px 30px;
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
@@ -1117,7 +1117,7 @@ body {
 }
 @media (min-width: 1025px) {
     .index-hero {
-        height: 50vh;
+        height: 34vh;
     }
     .index-hero h1 {
         font-size: 48px;
