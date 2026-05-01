@@ -4,8 +4,6 @@ body {
     margin: 0;
     background: #f4f6f9;
 }
-
-
 header {
     position: sticky;
     display: flex;
@@ -15,25 +13,21 @@ header {
     background: linear-gradient(#2f6fad, #1f4e79);
     color: white;
 }
-
 nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 20px;
 }
-
 nav a {
     margin: 0 10px;
     color: white;
     text-decoration: none;
 }
-
 .logo {
     font-size: 20px;
     font-weight: bold;
 }
-
 .index-hero {
     text-align: center;
     padding-top: 66px;
@@ -41,29 +35,23 @@ nav a {
     color: white;
     height: 42vh;
 }
-
 .index-hero h1 {
     padding-top: 55px;
     font-size: 45px;
 }
-
 .index-hero form input {
     width: 300px;
     padding: 7px;
 }
-
 .index-hero form button {
     padding: 6px;
 }
-
 .index-hero p {
     font-size: 24px;
 }
-
 .hero-buttons {
     margin-top: 20px;
 }
-
 .index-gero-btn {
     padding: 15px 35px;
     border-radius: 5px;
@@ -72,20 +60,16 @@ nav a {
     display: inline-block;
     font-size: 20px;
 }
-
 .yellow {
     background: #ffc107
 }
-
 .blue {
     background: #17a2b8
 }
-
 .green {
     background: #28a745;
     color: white
 }
-
 .icons {
     display: flex;
     justify-content: center;
@@ -93,7 +77,6 @@ nav a {
     padding: 30px;
     padding-top: 66px;
 }
-
 .icon-card {
     width: 92px;
     height: 92px;
@@ -105,23 +88,13 @@ nav a {
     font-size: 30px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
-
 .icon-card:hover {
     height: 110px;
     width: 110px;
 }
-
 .hero-buttons a :hover {
     font-size: 30px;
 }
-
-/* front page end */
-
-
-
-
-
-/* FULL SCREEN CENTER */
 .form-container {
     display: flex;
     justify-content: center;
@@ -129,12 +102,9 @@ nav a {
     min-height: 80vh;
     padding: 20px;
 }
-
 .form-container form {
     margin-right: 26px;
 }
-
-/* FORM BOX */
 .form-box {
     width: 100%;
     background: white;
@@ -143,14 +113,10 @@ nav a {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     text-align: center;
 }
-
-/* HEADING */
 .form-box h2 {
     margin-bottom: 20px;
     color: #2f6fad;
 }
-
-/* INPUTS */
 .form-box input {
     width: 100%;
     padding: 12px;
@@ -159,20 +125,16 @@ nav a {
     border: 1px solid #ccc;
     font-size: 15px;
 }
-
 .form-box input {
     border: 1px solid #ddd;
     border-radius: 8px;
     transition: 0.3s;
 }
-
 .form-box input:focus {
     border-color: #2f6fad;
     outline: none;
     box-shadow: 0 0 5px rgba(47, 111, 173, 0.3);
 }
-
-/* BUTTON */
 .submit-btn {
     width: 348px;
     padding: 12px;
@@ -185,27 +147,17 @@ nav a {
     transition: 0.3s;
     margin-top: 20px;
 }
-
 .submit-btn:hover {
     background: #1f4e79;
 }
-
 .label-input {
     display: flex;
     margin-top: 22px;
 }
-
 .edit-profile-submit {
     margin-top: 25px;
     padding: 7px;
 }
-
-
-
-
-/* HEADER PROFILE */
-
-
 .nav-profile {
     width: 35px;
     height: 35px;
@@ -213,34 +165,28 @@ nav a {
     cursor: pointer;
     object-fit: cover;
 }
-
-
 .profile-container {
     width: 60%;
     margin-top: 50px;
     text-align: center;
     margin-left: 340px;
 }
-
 .profile-header {
     background: linear-gradient(to right, #6a11cb, #2575fc);
     padding: 30px;
     border-radius: 15px;
     color: white;
 }
-
 .profile-pic {
     width: 100px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
-
 .profile-stats {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
 }
-
 .card {
     background: white;
     padding: 20px;
@@ -248,15 +194,12 @@ nav a {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 .profile-actions {
     margin-top: 60px;
 }
-
 .edit-profile-anchor {
     margin-top: 42px;
 }
-
 .edit-profile-btn {
     padding: 10px 20px;
     margin: 10px;
@@ -266,8 +209,6 @@ nav a {
     border-radius: 8px;
     font-size: 16px;
 }
-
-
 .btn {
     padding: 10px 20px;
     margin: 10px;
@@ -276,7 +217,6 @@ nav a {
     text-decoration: none;
     border-radius: 8px;
 }
-
 .logout-btn {
     background: red;
     color: white;
@@ -284,20 +224,16 @@ nav a {
     border-radius: 8px;
     text-decoration: none;
 }
-
 .profile-logout {
     margin-top: 38px;
     font-size: 20px;
-
 }
-
 .voucher-section {
     margin-top: 45px;
     text-align: center;
     text-decoration: none;
     color: #2575fc;
 }
-
 .voucher-card {
     background: white;
     padding: 15px;
@@ -307,17 +243,6 @@ nav a {
     width: 200px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-
-
-/* HEADER PROFILE end here */
-
-
-
-
-
-/* CLAIM PAGE */
-
 .claim-container {
     width: 400px;
     margin: 60px auto;
@@ -327,7 +252,6 @@ nav a {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
 .claim-img {
     width: 150px;
     height: 150px;
@@ -335,12 +259,10 @@ nav a {
     border-radius: 10px;
     margin: 15px 0;
 }
-
 .claim-user {
     color: gray;
     margin-bottom: 15px;
 }
-
 textarea {
     width: 100%;
     height: 80px;
@@ -350,7 +272,6 @@ textarea {
     resize: none;
     margin-bottom: 15px;
 }
-
 .claim-btn {
     background: #4CAF50;
     color: white;
@@ -359,11 +280,9 @@ textarea {
     border-radius: 8px;
     cursor: pointer;
 }
-
 .claim-btn:hover {
     background: #45a049;
 }
-
 .success-msg {
     background: #d4edda;
     color: #155724;
@@ -371,36 +290,25 @@ textarea {
     border-radius: 6px;
     margin-bottom: 15px;
 }
-
-/* CLAIM PAGE END*/
-
-
-
-
 .item-list {
     width: 500px;
     margin: auto;
 }
-
 .item {
     background: white;
     padding: 20px;
     margin: 15px 0;
     border-radius: 8px;
 }
-
 .claim-box {
     width: 350px;
     margin: 40px auto;
     text-align: center;
 }
-
 .profile {
     text-align: center;
     margin-top: 30px;
 }
-
-
 .profile-pic {
     width: 130px;
     height: 130px;
@@ -409,30 +317,23 @@ textarea {
     background-position: center;
     overflow: hidden;
 }
-
-
-
 .leaderboard {
     width: 300px;
     margin: auto;
 }
-
 .admin {
     width: 400px;
     margin: 40px auto;
 }
-
 .profile-menu {
     position: relative;
     display: inline-block;
 }
-
 .profile-icon {
     font-size: 32px;
     cursor: pointer;
     color: white;
 }
-
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -443,37 +344,29 @@ textarea {
     border-radius: 6px;
     overflow: hidden;
 }
-
 .dropdown-menu a {
     display: block;
     padding: 12px;
     text-decoration: none;
     color: black;
 }
-
 .dropdown-menu a:hover {
     background: #f2f2f2;
 }
-
-
-
 .hero form {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    /* space between input and button */
     border-radius: 12px;
     padding-left: 10px;
 }
-
 .hero form input {
     padding: 10px;
     border-radius: 10px;
     border: none;
     width: 340px;
 }
-
 .hero form button {
     padding: 10px 15px;
     border-radius: 8px;
@@ -481,15 +374,6 @@ textarea {
     cursor: pointer;
     background-color: white;
 }
-
-
-
-
-
-
-/* ===== MY ITEMS PAGE ===== */
-
-
 .items-container {
     display: flex;
     justify-content: center;
@@ -497,8 +381,6 @@ textarea {
     gap: 20px;
     padding: 40px 20px;
 }
-
-/* CARD */
 .item-card {
     width: 860px;
     height: 600px;
@@ -510,15 +392,12 @@ textarea {
     transition: 0.3s;
     margin-top: 30px;
 }
-
 .item-card h3 {
     font-size: 30px;
 }
-
 .item-card p {
     font-size: 18px;
 }
-
 .item-card .back-btn {
     font-size: 25px;
     text-decoration: none;
@@ -528,28 +407,20 @@ textarea {
     padding: 5px;
     background-color: #1d4a88;
 }
-
 .item-card:hover {
     transform: translateY(-5px);
 }
-
-/* IMAGE FIX */
 .item-card img {
     width: 320px;
     height: 320px;
     object-fit: cover;
-    /* 🔥 important */
     border-radius: 10px;
     margin-top: 20px;
 }
-
-/* TEXT */
 .item-card h4 {
     margin-top: 10px;
     font-size: 18px;
 }
-
-/* HEADER FIX */
 .top-header {
     padding: 20px;
     background-color: #1d4a88;
@@ -559,11 +430,9 @@ textarea {
     font-weight: bold;
     height: 7vh;
 }
-
 .top-header h2 {
     margin-bottom: 30px;
 }
-
 @media (max-width: 600px) {
     .item-card {
         width: 90%;
@@ -573,32 +442,16 @@ textarea {
         height: 180px;
     }
 }
-
-
-
-/* ===== MY ITEMS PAGE END ===== */
-
-
-
-
-
-/* ===== SEARCH PAGE ===== */
-
 .search-container {
-    /* width: 70%; */
     width: 1200px;
     margin: auto;
     margin-top: 65px;
 }
-
-/* search box */
 .search-box {
     width: 1178px;
     padding: 10px;
     margin-bottom: 20px;
 }
-
-/* card layout */
 .search-card {
     display: flex;
     gap: 15px;
@@ -608,21 +461,15 @@ textarea {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-/* image */
 .search-card img {
     width: 120px;
     height: 120px;
     object-fit: cover;
     border-radius: 8px;
 }
-
-/* info */
 .card-info {
     flex: 1;
 }
-
-/* claim button */
 .btn-claim {
     display: inline-block;
     padding: 8px 15px;
@@ -632,8 +479,6 @@ textarea {
     border-radius: 5px;
     margin-top: 10px;
 }
-
-/* found label */
 .found-label {
     display: inline-block;
     padding: 5px 10px;
@@ -642,21 +487,10 @@ textarea {
     border-radius: 5px;
     margin-top: 10px;
 }
-
-/* ===== SEARCH PAGE END ===== */
-
-
-
-
-/* ============= ADMIN PAGE ============= */
-
-/* PAGE BACKGROUND */
 body {
     background: #f4f6f9;
     font-family: Arial;
 }
-
-/* NAVBAR */
 .admin-navbar {
     background: #4e73df;
     color: white;
@@ -666,30 +500,21 @@ body {
     align-items: center;
     height: 53px;
 }
-
 .admin-navba h2 {
     font-size: 30px;
 }
-
 .admin-navba .admin-nav-links a {
     font-size: 25px;
 }
-
-/* NAV LINKS */
 .admin-nav-links a {
     color: white;
     margin-left: 20px;
     text-decoration: none;
 }
-
-/* CONTAINER */
 .admin-container {
     margin-left: 446px;
     margin-top: 45px;
-
 }
-
-/* CARD */
 .admin-card {
     background: white;
     padding: 20px;
@@ -698,19 +523,14 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 737px;
 }
-
 .admin-card :hover {
     transform: translateY(-5px);
 }
-
-/* CARD TITLE */
 .admin-cardh3 {
     margin-bottom: 10px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 8px;
 }
-
-/* CLAIM ROW */
 .admin-claim-box {
     display: flex;
     justify-content: space-between;
@@ -720,8 +540,6 @@ body {
     margin-top: 10px;
     border-radius: 6px;
 }
-
-/* BUTTONS */
 .admin-actions a {
     padding: 6px 14px;
     border-radius: 5px;
@@ -729,16 +547,12 @@ body {
     color: white;
     font-size: 14px;
 }
-
 .admin-approve {
     background: #28a745;
 }
-
 .admin-reject {
     background: #dc3545;
 }
-
-/* SECONDARY BUTTON */
 .admin-btn {
     padding: 10px 15px;
     border: 1px solid #ccc;
@@ -748,17 +562,9 @@ body {
     border-radius: 6px;
     text-decoration: none;
 }
-
 .admin-btn:hover {
     background: #2e59d9;
 }
-
-/* ============= ADMIN PAGE END ============= */
-
-
-
-/* ================= ADMIN SETTINGS PAGE ================= */
-
 .admin-settings-navbar {
     background: linear-gradient(135deg, #4e73df, #6f8ef6);
     padding: 20px;
@@ -768,14 +574,12 @@ body {
     font-weight: bold;
     letter-spacing: 1px;
 }
-
 .admin-settings-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
 }
-
 .admin-settings-card {
     width: 420px;
     background: #ffffff;
@@ -784,13 +588,10 @@ body {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
 .admin-settings-card h3 {
     margin-bottom: 20px;
     color: #333;
 }
-
-/* INPUT FIELDS */
 .admin-settings-card input {
     width: 90%;
     padding: 10px;
@@ -799,14 +600,11 @@ body {
     margin-top: 5px;
     transition: 0.3s;
 }
-
 .admin-settings-card input:focus {
     border-color: #4e73df;
     outline: none;
     box-shadow: 0 0 5px rgba(78, 115, 223, 0.3);
 }
-
-/* BUTTON */
 .admin-settings-btn {
     margin-top: 15px;
     background: #4e73df;
@@ -817,12 +615,9 @@ body {
     cursor: pointer;
     transition: 0.3s;
 }
-
 .admin-settings-btn:hover {
     background: #2e59d9;
 }
-
-/* BACK LINK */
 .admin-settings-an {
     display: inline-block;
     margin-top: 15px;
@@ -830,38 +625,24 @@ body {
     color: #555;
     font-size: 14px;
 }
-
 .admin-settings-an:hover {
     color: #000;
 }
-
-/* ================= ADMIN SETTINGS PAGE ================= */
-
-
-
-
-/* REWARD PAGE */
-
-
 .reward-container {
     margin-top: 30px;
     margin-left: 390px;
     width: 875px;
 }
-
 .title {
     text-align: center;
     color: #333;
 }
-
 .reward-card {
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-
-/* HEADER */
 .header {
     display: flex;
     justify-content: space-between;
@@ -870,13 +651,10 @@ body {
     padding: 15px;
     border-radius: 8px;
 }
-
 .leaderboard-link {
     color: white;
     text-decoration: none;
 }
-
-/* USER BOX */
 .user-box {
     display: flex;
     justify-content: space-between;
@@ -886,79 +664,59 @@ body {
     margin-top: 15px;
     border-radius: 8px;
 }
-
 .trophy {
     font-size: 60px;
 }
-
-/* LEADERBOARD */
 .leaderboard {
     margin-top: 20px;
 }
-
 .leader-item {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
-
 .rank {
     color: orange;
     font-weight: bold;
 }
-
 .name {
     flex: 1;
     margin-left: 10px;
 }
-
 .points {
     font-weight: bold;
 }
-
-/* ============ REWARD PAGE STYLE END =============== */
-
-
-/* ========= FOOTER SECTION ========== */
-
 .footer {
     background: #2c3e50;
     color: white;
     padding: 40px 20px 10px;
     margin-top: 50px;
 }
-
 .footer-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .footer-section {
     width: 30%;
 }
-
 .footer-section h3 {
     margin-bottom: 10px;
 }
-
 .footer-section a {
     color: #ccc;
     text-decoration: none;
 }
-
 .footer-section a:hover {
     color: #f1c40f;
 }
-
 .footer-bottom {
     text-align: center;
     margin-top: 20px;
     border-top: 1px solid #555;
     padding-top: 10px;
 }
-
 .social-icons a {
     color: white !important;   
     font-size: 20px;
@@ -967,73 +725,50 @@ body {
     outline: none;           
     display: inline-block;
 }
-
 .social-icons a:hover {
     color: #f1c40f;
 }
-
-/* 📱 MOBILE RESPONSIVE */
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
         text-align: center;
     }
-
     .footer-section {
         width: 100%;
         margin-bottom: 20px;
     }
 }
-
-/* ========= FOOTER SECTION END ========== */
-
-
-/* ================= RESPONSIVE DESIGN ================= */
-
-
 @media (max-width: 768px) {
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
     nav {
         display: flex;
         justify-content: flex-end;
         width: auto;
     }
-
     .logo {
         margin: 0;
     }
-
     .nav-right {
         display: flex;
         align-items: center;
         gap: 10px;
     }
-
     nav a[href="/"],
     nav a[href="/post_lost"],
     nav a[href="/post_found"] {
         display: none;
     }
-
 }
-
-
-
-
-/* 📱 Mobile Devices (up to 480px) */
 @media (max-width: 480px) {
-
     header {
         flex-direction: row;
         text-align: center;
         padding: 15px;
     }
-
     nav {
         flex-wrap: wrap;
         justify-content: center;
@@ -1041,63 +776,48 @@ body {
         margin-top: 10px;
         padding-left: 30px;
     }
-
     nav a {
         font-size: 18px;
     }
-
     .profile-icon {
         font-size: 26px;
     }
-
     .index-hero {
         padding: 35px 15px;
         height: auto;
     }
-
     .index-hero h1 {
         font-size: 18px;
         padding-top: 14px;
     }
-
     .index-hero p {
         font-size: 16px;
     }
-
     .index-hero-btn {
         padding: 10px 20px;
         font-size: 14px;
     }
-
     .index-hero form input {
         width: 200px;
     }
-
     .icons {
         flex-wrap: wrap;
         gap: 20px;
         padding-top: 30px;
     }
-
     .icon-card {
         width: 70px;
         height: 70px;
         font-size: 22px;
     }
-
-
-
     .form-box,
     .item-list,
     .admin {
         width: 90%;
     }
-
-    /* Hide Home on mobile */
     .hide-mobile {
         display: none;
     }
-
     .reward-container {
         margin-top: 30px;
         margin-left: 10px;
@@ -1105,63 +825,45 @@ body {
         margin-right: 12px;
         margin-bottom: 30px;
     }
-
     .title {
         font-size: 25px;
     }
-
     .reward-card {
         margin-right: 12px;
     }
-
     .header h2 {
         font-size: 18px;
     }
-
-
 }
-
-
-
-/* 📱 Tablet Devices (481px – 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
-
     header {
         flex-direction: column;
         text-align: center;
     }
-
     nav {
         flex-wrap: wrap;
         justify-content: center;
     }
-
     .index-hero {
         height: auto;
         padding: 50px 20px;
     }
-
     .index-hero h1 {
         font-size: 32px;
     }
-
     .index-hero p {
         font-size: 18px;
     }
-
     .index-gero-btn {
         font-size: 16px;
         padding: 12px 25px;
     }
-
     .index-hero form input {
         width: 200px;
     }
-
     .icons {
         flex-wrap: wrap;
     }
-
     .item-list {
         width: 85%;
     }
@@ -1174,234 +876,181 @@ body {
         margin-left: 26px;
         width: 354px;
     }
-
 }
-
-/* 💻 Laptop Devices (769px – 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
-
     .index-hero h1 {
         font-size: 38px;
     }
-
     .index-hero p {
         font-size: 20px;
     }
-
     .item-list {
         width: 70%;
     }
-
     .profile-container {
         margin-top: 102px;
         width: 840px;
         margin-left: 68px;
     }
-
     .label-input {
         margin-top: 55px;
         font-size: 32px;
     }
-
     .edit-profile-submit {
         margin-top: 85px;
         padding: 15px;
         font-size: 36px;
     }
-
     .profile-header {
         padding: 190px;
         height: 40vh;
     }
-
     .profile-pic {
         width: 270px;
         height: 270px;
     }
-
     .profile-header h2 {
         font-size: 54px;
         font-weight: bold;
     }
-
     .profile-header p {
         font-size: 42px;
     }
-
-
     .logout-btn {
         font-size: 58px;
         text-decoration: none;
         padding: 20px;
     }
-
     .profile-logout {
         margin-top: 85px;
     }
-
-
     .btn {
         font-size: 45px;
         padding: 23px
     }
-
     .voucher-section {
         margin-top: 84px;
     }
-
     .form-box {
         width: 80%;
         height: 50vh;
     }
-
     .form-box textarea {
         width: 50%;
         font-size: 30px;
         margin-top: 30px;
         padding-right: 385px;
-
     }
-
     .form-box h2 {
         margin-top: 70px;
         font-size: 80px;
     }
-
     .form-box input {
         font-size: 45px;
         margin-top: 30px;
         padding: 17px;
     }
-
     .submit-btn {
         margin-top: 68px;
         font-size: 50px;
         width: 752px;
     }
-
-
     .edit-profile-btn {
         font-size: 50px;
     }
-
     .edit-profile-anchor {
         margin-top: 100px;
     }
-
     .profile-actions {
         margin-top: 100px;
     }
-
     .reward-container {
         margin-top: 30px;
         margin-left: 18px;
         width: 363px;
     }
-
     .reward-container {
         margin-top: 30px;
         margin-left: 26px;
         width: 354px;
     }
-
     .search-container {
         width: 1200px;
         margin: auto;
         margin-top: 78px;
         margin-left: 52px;
     }
-
     .search-container h2 {
         font-size: 55px;
     }
-
     .search-container h3 {
         font-size: 40px;
         margin-top: 60px;
     }
-
     .search-card {
-
         margin-right: 60px;
     }
-
     .search-box {
         width: 1120px;
         font-size: 35px;
     }
-
     .search-card img {
         width: 185px;
         height: 185px;
     }
-
     .card-info {
         font-size: 38px;
     }
-
     .claim-container {
         width: 775px;
         margin-top: 335px;
         margin-left: 80px;
         height: 57vh;
     }
-
     .claim-container h2 {
         font-size: 55px;
     }
-
     .claim-container h3 {
         font-size: 45px;
     }
-
     .claim-container form {
         margin: 35px;
     }
-
     .claim-container textarea {
         font-size: 28px;
         height: 100px;
     }
-
     .claim-img {
         width: 286px;
         height: 286px;
     }
-
     .claim-user {
         font-size: 36px;
     }
-
     .claim-btn {
         font-size: 37px;
         padding: 25px;
         margin-top: 20px;
     }
-
     .top-header h2 {
         font-size: 60px;
     }
-
     .item-card {
         width: 805px;
         height: 1200px;
         margin-top: 85px;
     }
-
     .item-card h3 {
         font-size: 48px;
     }
-
     .item-card p {
         font-size: 42px;
     }
-
     .item-card img {
         width: 600px;
         height: 600px;
         margin-top: 40px;
     }
-
     .item-card .back-btn {
         text-decoration: none;
         font-size: 46px;
@@ -1411,82 +1060,61 @@ body {
         border-radius: 7px;
         background-color: #1d4a88;
     }
-
     .admin-navbar {
         height: 155px;
     }
-
     .admin-navbar h2 {
         font-size: 40px;
     }
-
     .admin-navbar .admin-nav-links {
         font-size: 37px;
     }
-
     .admin-container {
         margin-left: 30px;
         margin-right: 30px;
         width: 920px;
     }
-
     .admin-card {
         width: 882px;
     }
-
-
-
     .admin-container .admin-card h3 {
         font-size: 58px;
     }
-
     .admin-container .admin-card .admin-claim-box p {
         font-size: 38px;
     }
-
     .admin-container .admin-card .admin-claim-box .admin-actions a {
         font-size: 30px;
     }
-
     .admin-container .admin-card .admin-btn {
         font-size: 38px;
     }
-
     .admin-settings-navbar {
         font-size: 50px;
     }
-
     .admin-settings-card {
         width: 758px;
         height: 780px;
         margin-bottom: 245px;
     }
-
     .admin-settings-card h3 {
         font-size: 59px;
     }
-
     .admin-settings-card form {
         font-size: 47px;
     }
-
     .admin-settings-card form input {
         width: 500px;
         font-size: 35px;
         color: #787373;
     }
-
     .admin-settings-card form .admin-settings-btn {
         font-size: 41px;
     }
-
     .admin-settings-card .admin-settings-an {
         font-size: 48px;
     }
 }
-
-
-/* 🖥️ Large Screens (1025px and above) */
 @media (min-width: 1025px) {
     .index-hero {
         height: 50vh;
