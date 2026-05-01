@@ -153,22 +153,33 @@ def search():
 @app.route("/claim/<int:item_id>", methods=["GET","POST"])
 def claim(item_id):
 
+    # ✅ check login first
+    if "user_id" not in session:
+        return redirect("/register")
+
     conn = get_db()
     cur = conn.cursor()
 
+    # ✅ use LEFT JOIN (IMPORTANT)
     cur.execute("""
         SELECT lost_items.*, users.name 
         FROM lost_items
-        JOIN users ON lost_items.user_id = users.id
+        LEFT JOIN users ON lost_items.user_id = users.id
         WHERE lost_items.id = ?
     """, (item_id,))
 
     item = cur.fetchone()
 
+    # ✅ handle missing item
+    if item is None:
+        conn.close()
+        return "Item not found ❌"
+
     if request.method == "POST":
 
-        message = request.form["message"]
+        message = request.form.get("message")
 
+        # ✅ safe insert
         cur.execute(
             "INSERT INTO claims(item_id, claimer_id, message) VALUES(?,?,?)",
             (item_id, session["user_id"], message)
